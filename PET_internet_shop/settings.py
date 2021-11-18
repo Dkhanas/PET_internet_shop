@@ -115,3 +115,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+USER_MODELS_MAX_LENGTH = {
+    'TextField': 2000,
+    'CharField': 30,
+    'EmailField': 60
+}
+
+USER_APP_ROUTES = {
+    'main_page': '/',
+    'sign_up': '/signup/',
+    'login': '/login/',
+    'logout': '/logout/',
+}

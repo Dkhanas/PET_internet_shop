@@ -3,6 +3,7 @@ from django.contrib.auth.models import PermissionsMixin
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 from django.utils import timezone
+from PET_internet_shop.settings import *
 
 
 class UserManager(BaseUserManager):
@@ -46,10 +47,10 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    email = models.EmailField(verbose_name="email", max_length=60, unique=True)
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
-    phone = models.CharField(max_length=13)
+    email = models.EmailField(verbose_name="email", max_length=USER_MODELS_MAX_LENGTH['EmailField'], unique=True)
+    first_name = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
+    last_name = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
+    phone = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
     date_joined = models.DateTimeField(verbose_name='date joined', auto_now_add=True)
     last_login = models.DateTimeField(verbose_name='last login', auto_now=True)
     is_admin = models.BooleanField(default=False)
@@ -64,12 +65,12 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 
 class Language(models.Model):
-    language = models.CharField(max_length=50)
-    alias = models.CharField(max_length=5)
+    language = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
+    alias = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
 
 
 class Comment(models.Model):
-    text = models.TextField()
+    text = models.TextField(max_length=USER_MODELS_MAX_LENGTH['TextField'])
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
     created_date = models.DateTimeField(default=timezone.now)
