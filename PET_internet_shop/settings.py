@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'internet_shop'
+    'user'
 ]
 
 MIDDLEWARE = [
@@ -58,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-AUTH_USER_MODEL = "internet_shop.User"
+AUTH_USER_MODEL = "user.User"
 
 WSGI_APPLICATION = 'PET_internet_shop.wsgi.application'
 

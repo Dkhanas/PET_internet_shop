@@ -8,7 +8,7 @@ from .forms import SignUpForm
 
 def home(request):
     if request.user.is_authenticated:
-        return render(request, 'internet_shop/home.html')
+        return render(request, 'user/home.html')
     else:
         return redirect('/login/')
 
@@ -25,7 +25,7 @@ def signup(request):
             return redirect('/')
     else:
         form = SignUpForm()
-    return render(request, 'internet_shop/sign_up.html', {'form': form})
+    return render(request, 'user/sign_up.html', {'form': form})
 
 
 def user_login(request):
@@ -42,7 +42,7 @@ def user_login(request):
                     return redirect('/')
         else:
             fm = AuthenticationForm()
-        return render(request, 'internet_shop/login.html', {'form': fm})
+        return render(request, 'user/login.html', {'form': fm})
     else:
         return redirect('/')
 
