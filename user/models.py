@@ -1,9 +1,19 @@
+import uuid
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
 from django.contrib.auth.models import PermissionsMixin
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 from django.utils import timezone
 from PET_internet_shop.settings import *
+
+
+class BaseClass(models.Model):
+    created_date = models.DateTimeField(auto_now_add=True)
+    last_updated = models.DateTimeField(auto_now=True)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+
+    class Meta:
+        abstract = True
 
 
 class UserManager(BaseUserManager):
@@ -46,7 +56,7 @@ class UserManager(BaseUserManager):
         return user
 
 
-class User(AbstractBaseUser, PermissionsMixin):
+class User(AbstractBaseUser, PermissionsMixin, BaseClass):
     email = models.EmailField(verbose_name="email", max_length=USER_MODELS_MAX_LENGTH['EmailField'], unique=True)
     first_name = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
     last_name = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
@@ -64,14 +74,13 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
 
-class Language(models.Model):
-    language = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
+class Language(BaseClass):
+    language_name = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'], default="")
     alias = models.CharField(max_length=USER_MODELS_MAX_LENGTH['CharField'])
 
 
-class Comment(models.Model):
+class Comment(BaseClass):
     text = models.TextField(max_length=USER_MODELS_MAX_LENGTH['TextField'])
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
-    created_date = models.DateTimeField(default=timezone.now)
     is_approved = models.BooleanField(default=False)
