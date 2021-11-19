@@ -38,7 +38,7 @@ class Product(Base):
     description = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=9, decimal_places=2)
     image = models.TextField()
-    quantity = models.IntegerField()
+    quantity = models.PositiveSmallIntegerField()
 
 
 class Product_Characteristic(Base):
