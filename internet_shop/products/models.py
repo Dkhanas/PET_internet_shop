@@ -29,6 +29,9 @@ class Image(BaseModel):
         # TODO: add s3 bucket support
         super().save(force_insert, force_update, using, update_fields)
 
+    def __str__(self):
+        return self.image_url
+
 
 class Catalog(MPTTModel, BaseModel):
     name = models.CharField(max_length=NAME_CHARFIELD_LENGTH)
