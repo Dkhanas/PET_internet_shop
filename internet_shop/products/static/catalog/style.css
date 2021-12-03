@@ -1,0 +1,50 @@
+
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    background-color: #fff
+}
+
+.image-card {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.image-card-1 {
+    background-color: #18A4F7
+}
+
+.image-card-2 {
+    background-color: #00D7D2
+}
+
+.image-card-3 {
+    background-color: #FF75A0
+}
+
+.image-card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover
+}
+
+.card-text {
+    font-size: 13px
+}
+
+.card-body a {
+    font-size: 12px
+}
+
+.about span {
+    font-size: 12px
+}
+.category-img{
+    height: 300px;
+}
