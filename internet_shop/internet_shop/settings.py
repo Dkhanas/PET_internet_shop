@@ -39,7 +39,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'PET_internet_shop.urls'
+ROOT_URLCONF = 'internet_shop.urls'
 
 TEMPLATES = [
     {
@@ -60,7 +60,7 @@ TEMPLATES = [
 
 AUTH_USER_MODEL = "user.User"
 
-WSGI_APPLICATION = 'PET_internet_shop.wsgi.application'
+WSGI_APPLICATION = 'internet_shop.wsgi.application'
 
 
 # Database
@@ -127,11 +127,3 @@ try:
 except ImportError:
     pass
 
-TEXT_FIELD = 2000
-CHAR_FIELD = 30
-EMAIL_FIELD = 60
-
-MAIN_PAGE = '/'
-SIGN_UP = '/signup/'
-LOGIN = '/login'
-LOGOUT = '/logout/'

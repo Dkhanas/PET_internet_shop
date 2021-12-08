@@ -2,16 +2,15 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import render, redirect
-from django.utils import timezone
 from .forms import SignUpForm
-from PET_internet_shop.settings import *
 
+from utils.constants import LOGIN, LOGOUT, SIGN_UP, MAIN_PAGE
 
 def home(request):
     if request.user.is_authenticated:
         return render(request, 'home.html')
     else:
-        return redirect(USER_APP_ROUTES['login'])
+        return redirect(LOGIN)
 
 
 def signup(request):
@@ -23,7 +22,7 @@ def signup(request):
 
             user.save()
             login(request, user)
-            return redirect(USER_APP_ROUTES['main_page'])
+            return redirect(MAIN_PAGE)
     else:
         form = SignUpForm()
     return render(request, 'sign_up.html', {'form': form})
@@ -40,14 +39,14 @@ def user_login(request):
                 if user:
                     login(request, user=user)
                     messages.success(request, 'Logged in successfully!')
-                    return redirect(USER_APP_ROUTES['main_page'])
+                    return redirect(MAIN_PAGE)
         else:
             fm = AuthenticationForm()
         return render(request, 'login.html', {'form': fm})
     else:
-        return redirect(USER_APP_ROUTES['main_page'])
+        return redirect(MAIN_PAGE)
 
 
 def user_logout(request):
     logout(request)
-    return redirect(USER_APP_ROUTES['login'])
+    return redirect(LOGIN)
