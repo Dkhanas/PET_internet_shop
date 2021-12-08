@@ -65,10 +65,17 @@ WSGI_APPLICATION = 'PET_internet_shop.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-try:
-    from local_settings import *
-except ImportError:
-    pass
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
+    }
+}
 
 
 # Password validation
@@ -115,16 +122,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+try:
+    from local_settings import *
+except ImportError:
+    pass
 
-USER_MODELS_MAX_LENGTH = {
-    'TextField': 2000,
-    'CharField': 30,
-    'EmailField': 60
-}
+TEXT_FIELD = 2000
+CHAR_FIELD = 30
+EMAIL_FIELD = 60
 
-USER_APP_ROUTES = {
-    'main_page': '/',
-    'sign_up': '/signup/',
-    'login': '/login/',
-    'logout': '/logout/',
-}
+MAIN_PAGE = '/'
+SIGN_UP = '/signup/'
+LOGIN = '/login'
+LOGOUT = '/logout/'
