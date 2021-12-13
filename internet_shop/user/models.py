@@ -34,7 +34,7 @@ class Language(BaseModel):
     alias = models.CharField(max_length=CHAR_FIELD)
 
 
-class User(AbstractBaseUser, PermissionsMixin, BaseModel):
+class User(BaseModel, AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=CHAR_FIELD, null=True)
     last_name = models.CharField(max_length=CHAR_FIELD, null=True)
     email = models.EmailField(verbose_name="email", max_length=EMAIL_FIELD, null=True)
@@ -43,6 +43,9 @@ class User(AbstractBaseUser, PermissionsMixin, BaseModel):
 
     USERNAME_FIELD = 'id'
     REQUIRED_FIELDS = []
+
+    class Meta:
+        unique_together = ('email', 'phone')
 
     objects = UserManager()
 
