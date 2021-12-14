@@ -1,3 +1,4 @@
+
 """
 ASGI config for internet_shop project.
 
