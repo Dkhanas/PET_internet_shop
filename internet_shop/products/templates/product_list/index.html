@@ -93,15 +93,7 @@
             <div class="text-muted m-2" id="res">Showing -------</div>
             <div class="ml-auto mr-lg-4">
                 <div id="sorting" class="border rounded p-1 m-1"><span class="text-muted">Sort by</span>
-                    <form id="myForm" action="{% url 'category_items' category_name %}" method="get" novalidate onchange=submitFunc()>
-<!--                    <select-->
-<!--                        name="sort" id="sort">-->
-<!--                    <a href="{% url 'category_items' category_name %}?order=ascending">-->
-<!--                        <option value="ascending"><b>Price in ascending order</b></option>-->
-<!--                    </a>-->
-<!--                    <option value="descending"><a href="{% url 'category_items' category_name %}?order=descending"><b>Price-->
-<!--                        in descending order</b></a></option>-->
-<!--                </select>-->
+                    <form id="myForm" action="{% url 'category_items' category_slug %}" method="get" novalidate onchange=submitFunc()>
                     {% csrf_token %}
                     {{ form }}
                         </form>
@@ -118,7 +110,7 @@
                         <div class="d-flex flex-row my-2">
                             <div class="text-muted">${{product.price}}</div>
                         </div>
-                        <a href="{% url 'product' category_name product.slug %}">
+                        <a href="{% url 'product' category_slug product.slug %}">
                             <button class="btn w-100 rounded my-2">Add to cart</button>
                         </a>
                     </div>

@@ -60,6 +60,9 @@ class Product(BaseModel, SlugModel):
     quantity = models.PositiveSmallIntegerField()
     category = models.ForeignKey(Category, related_name="products", on_delete=models.SET_NULL, null=True)
 
+    class Meta:
+        ordering = ["created_at"]
+
 
 class ProductImage(BaseModel):
     image = models.ForeignKey(Image, related_name="product_images", on_delete=models.CASCADE)
