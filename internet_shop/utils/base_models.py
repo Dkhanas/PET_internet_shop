@@ -11,7 +11,7 @@ class BaseModel(models.Model):
         abstract = True
 
     def __str__(self):
-        if hasattr(self, "name"):
+        if hasattr(self, 'name'):
             return self.name
         else:
             return str(self.id)
