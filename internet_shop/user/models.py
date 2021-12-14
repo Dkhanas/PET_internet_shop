@@ -5,6 +5,7 @@ from django.db import models
 
 from utils.constants import EMAIL_FIELD, TEXT_FIELD, CHAR_FIELD
 from utils.base_models import BaseModel
+from products.models import Product
 
 
 class UserManager(BaseUserManager):
@@ -51,7 +52,9 @@ class User(BaseModel, AbstractBaseUser, PermissionsMixin):
 
 
 class Comment(BaseModel):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     text = models.TextField(max_length=TEXT_FIELD)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
     is_approved = models.BooleanField(default=False)
+
