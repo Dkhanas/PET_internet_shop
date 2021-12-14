@@ -1,21 +1,9 @@
-from django.urls import path, include
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
+    path("", views.CategoryView.as_view(), name="category"),
     path("<str:category_name>/items/", views.CatalogItemsView.as_view(), name="category_items"),
-    url(
-        r"",
-        include(
-            [
-                url(r"^$", views.CatalogView.as_view(), name="product"),
-                url(
-                    r"^(?!item/)(?P<sub_category_name>\S+)(?<!/items)$",
-                    views.CatalogView.as_view(),
-                    name="project_detail",
-                ),
-            ]
-        ),
-    ),
-    path("item/<uuid:product_id>/", views.ProductItem.as_view(), name="item"),
+    path("<str:category_name>/item/<str:product_name>/", views.ProductItem.as_view(), name="product"),
+    path("<str:category_name>/", views.CategoryView.as_view(), name="sub_category"),
 ]

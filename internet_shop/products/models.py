@@ -8,7 +8,7 @@ from utils.constants import (
 )
 from mptt.models import MPTTModel, TreeForeignKey
 
-from utils.base_models import BaseModel
+from utils.base_models import BaseModel, SlugModel
 
 
 class Currency(BaseModel):
@@ -38,7 +38,7 @@ class Image(BaseModel):
         return self.image_url
 
 
-class Catalog(MPTTModel, BaseModel):
+class Category(MPTTModel, BaseModel, SlugModel):
     name = models.CharField(max_length=NAME_CHARFIELD_LENGTH)
     parent = TreeForeignKey("self", on_delete=models.CASCADE, null=True, blank=True, related_name="children")
     image = models.ForeignKey(Image, related_name="catalog", on_delete=models.SET_NULL, null=True, blank=True)
@@ -47,7 +47,7 @@ class Catalog(MPTTModel, BaseModel):
         order_insertion_by = ["name"]
 
 
-class Product(BaseModel):
+class Product(BaseModel, SlugModel):
     name = models.CharField(max_length=NAME_CHARFIELD_LENGTH)
     code = models.CharField(max_length=CODE_CHARFIELD_LENGTH)
     description = models.CharField(max_length=HUGE_CHARFIELD_LENGTH)
@@ -58,7 +58,7 @@ class Product(BaseModel):
         max_digits=PRICE_DECIMALFIELD_DIGITS_LENGTH, decimal_places=PRICE_DECIMALFIELD_DECIMAL_LENGTH
     )
     quantity = models.PositiveSmallIntegerField()
-    category = models.ForeignKey(Catalog, related_name="products", on_delete=models.SET_NULL, null=True)
+    category = models.ForeignKey(Category, related_name="products", on_delete=models.SET_NULL, null=True)
 
 
 class ProductImage(BaseModel):

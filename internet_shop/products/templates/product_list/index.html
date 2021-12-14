@@ -1,35 +1,137 @@
 {% extends "base/base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href='{% static "product_list/style.css" %}'>
+{% endblock %}
 
 {% block content %}
-<section class="section-products">
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="header">
-                    <h3>Featured Product</h3>
-                    <h2>Popular Products</h2>
-                </div>
+<div class="filter">
+    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter"
+            aria-expanded="true" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
+<div id="mobile-filter">
+    <p class="pl-sm-0 pl-2"> Home | <b>All Breads</b></p>
+    <div class="border-bottom pb-2 ml-2">
+        <h4 id="burgundy">Filters</h4>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Categories</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"><input type="checkbox" id="artisan"> <label for="artisan">Fresh Artisan
+                Breads</label></div>
+            <div class="form-group"><input type="checkbox" id="breakfast"> <label for="breakfast">Breakfast
+                Breads</label></div>
+            <div class="form-group"><input type="checkbox" id="healthy"> <label for="healthy">Healthy Breads</label>
             </div>
-        </div>
-         <div class="d-flex flex-wrap justify-content-center row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-            <!-- Single Product -->
-
-            {% for product in products %}
-            <div class="col mb-3 me-5">
-                <a href="{% url 'item' product.id %}">
-                <div class="card h-100 shadow-sm"> <img src="https://www.freepnglogos.com/uploads/notebook-png/download-laptop-notebook-png-image-png-image-pngimg-2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="clearfix"> <span class="float-start badge rounded-pill bg-primary"></span> <span class="float-end price-hp">${{product.price}}</span> </div>
-                        <h5 class="card-title text-center">{{product.name}}</h5>
-                        <div class="text-center my-4"> <a href="{% url 'item' product.id %}" class="btn btn-warning">Check offer</a> </div>
-                    </div>
-                </div>
-                    </a>
+        </form>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Accompainments</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"><input type="checkbox" id="tea"> <label for="tea">Tea Cakes</label></div>
+            <div class="form-group"><input type="checkbox" id="cookies"> <label for="cookies">Cookies</label></div>
+            <div class="form-group"><input type="checkbox" id="pastries"> <label for="pastries">Pastries</label></div>
+            <div class="form-group"><input type="checkbox" id="dough"> <label for="dough">Cookie Dough</label></div>
+            <div class="form-group"><input type="checkbox" id="choco"> <label for="choco">Chocolates</label></div>
+        </form>
+    </div>
+    <div class="py-2 ml-3">
+        <h6 class="font-weight-bold">Top Offers</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"><input type="checkbox" id="25off"> <label for="25">25% off</label></div>
+            <div class="form-group"><input type="checkbox" id="5off"> <label for="5off" id="off">5% off on artisan
+                breads</label></div>
+        </form>
+    </div>
+</div>
+<!-- Sidebar filter section -->
+<section id="sidebar">
+    <p> Home | <b>All Breads</b></p>
+    <div class="border-bottom pb-2 ml-2">
+        <h4 id="burgundy">Filters</h4>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Categories</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"><input type="checkbox" id="artisan"> <label for="artisan">Fresh Artisan
+                Breads</label></div>
+            <div class="form-group"><input type="checkbox" id="breakfast"> <label for="breakfast">Breakfast
+                Breads</label></div>
+            <div class="form-group"><input type="checkbox" id="healthy"> <label for="healthy">Healthy Breads</label>
             </div>
-            {% endfor %}
-        </div>
+        </form>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Accompainments</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"><input type="checkbox" id="tea"> <label for="tea">Tea Cakes</label></div>
+            <div class="form-group"><input type="checkbox" id="cookies"> <label for="cookies">Cookies</label></div>
+            <div class="form-group"><input type="checkbox" id="pastries"> <label for="pastries">Pastries</label></div>
+            <div class="form-group"><input type="checkbox" id="dough"> <label for="dough">Cookie Dough</label></div>
+            <div class="form-group"><input type="checkbox" id="choco"> <label for="choco">Chocolates</label></div>
+        </form>
+    </div>
+    <div class="py-2 ml-3">
+        <h6 class="font-weight-bold">Top Offers</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"><input type="checkbox" id="25off"> <label for="25">25% off</label></div>
+            <div class="form-group"><input type="checkbox" id="5off"> <label for="5off" id="off">5% off on artisan
+                breads</label></div>
+        </form>
     </div>
 </section>
+<!-- products section -->
+<section id="products">
+    <div class="container">
+        <div class="d-flex flex-row">
+            <div class="text-muted m-2" id="res">Showing -------</div>
+            <div class="ml-auto mr-lg-4">
+                <div id="sorting" class="border rounded p-1 m-1"><span class="text-muted">Sort by</span>
+                    <form id="myForm" action="{% url 'category_items' category_name %}" method="get" novalidate onchange=submitFunc()>
+<!--                    <select-->
+<!--                        name="sort" id="sort">-->
+<!--                    <a href="{% url 'category_items' category_name %}?order=ascending">-->
+<!--                        <option value="ascending"><b>Price in ascending order</b></option>-->
+<!--                    </a>-->
+<!--                    <option value="descending"><a href="{% url 'category_items' category_name %}?order=descending"><b>Price-->
+<!--                        in descending order</b></a></option>-->
+<!--                </select>-->
+                    {% csrf_token %}
+                    {{ form }}
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for product in products %}
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"><img class="card-img-top"
+                                       src="https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="card-body">
+                        <h5><b>{{product.name}}</b></h5>
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted">${{product.price}}</div>
+                        </div>
+                        <a href="{% url 'product' category_name product.slug %}">
+                            <button class="btn w-100 rounded my-2">Add to cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<script>
+    function submitFunc(){
+        document.getElementById("myForm").submit();
+    }
+</script>
 {% endblock %}
-</body>
-</html>
