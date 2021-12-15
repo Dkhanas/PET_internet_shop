@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "user",
     "products",
 ]
 
@@ -69,6 +70,8 @@ TEMPLATES = [
     },
 ]
 
+AUTH_USER_MODEL = "user.User"
+
 WSGI_APPLICATION = "internet_shop.wsgi.application"
 
 
@@ -86,6 +89,7 @@ DATABASES = {
     }
 }
 
+AUTHENTICATION_BACKENDS = ["user.authentication.UserAuthBackend", "django.contrib.auth.backends.ModelBackend"]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -124,6 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

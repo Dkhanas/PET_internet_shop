@@ -1,1 +1,632 @@
-[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2021-12-12T17:29:48.340Z", "user": 1, "content_type": 13, "object_id": "53abf56c-4bcf-4ef1-9bf8-980ad6e01a69", "object_repr": "cosmetology", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2021-12-12T17:30:32.224Z", "user": 1, "content_type": 13, "object_id": "1dbbf18c-4ab0-41c9-aa60-fc49d79b38fc", "object_repr": "Kids products", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change user", "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view user", "content_type": 4, "codename": "view_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add content type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change content type", "content_type": 5, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add session", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view session", "content_type": 6, "codename": "view_session"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add characteristic", "content_type": 7, "codename": "add_characteristic"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change characteristic", "content_type": 7, "codename": "change_characteristic"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete characteristic", "content_type": 7, "codename": "delete_characteristic"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view characteristic", "content_type": 7, "codename": "view_characteristic"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add currency", "content_type": 8, "codename": "add_currency"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change currency", "content_type": 8, "codename": "change_currency"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete currency", "content_type": 8, "codename": "delete_currency"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view currency", "content_type": 8, "codename": "view_currency"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add image", "content_type": 9, "codename": "add_image"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change image", "content_type": 9, "codename": "change_image"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete image", "content_type": 9, "codename": "delete_image"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view image", "content_type": 9, "codename": "view_image"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add product", "content_type": 10, "codename": "add_product"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change product", "content_type": 10, "codename": "change_product"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete product", "content_type": 10, "codename": "delete_product"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can view product", "content_type": 10, "codename": "view_product"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can add product image", "content_type": 11, "codename": "add_productimage"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can change product image", "content_type": 11, "codename": "change_productimage"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can delete product image", "content_type": 11, "codename": "delete_productimage"}}, {"model": "auth.permission", "pk": 44, "fields": {"name": "Can view product image", "content_type": 11, "codename": "view_productimage"}}, {"model": "auth.permission", "pk": 45, "fields": {"name": "Can add product characteristic", "content_type": 12, "codename": "add_productcharacteristic"}}, {"model": "auth.permission", "pk": 46, "fields": {"name": "Can change product characteristic", "content_type": 12, "codename": "change_productcharacteristic"}}, {"model": "auth.permission", "pk": 47, "fields": {"name": "Can delete product characteristic", "content_type": 12, "codename": "delete_productcharacteristic"}}, {"model": "auth.permission", "pk": 48, "fields": {"name": "Can view product characteristic", "content_type": 12, "codename": "view_productcharacteristic"}}, {"model": "auth.permission", "pk": 49, "fields": {"name": "Can add category", "content_type": 13, "codename": "add_category"}}, {"model": "auth.permission", "pk": 50, "fields": {"name": "Can change category", "content_type": 13, "codename": "change_category"}}, {"model": "auth.permission", "pk": 51, "fields": {"name": "Can delete category", "content_type": 13, "codename": "delete_category"}}, {"model": "auth.permission", "pk": 52, "fields": {"name": "Can view category", "content_type": 13, "codename": "view_category"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$260000$HScFqikhvlf9vA0mKmDuOI$HBbSDq0nNU/s4Dm4sRihBRIh0aMzLvlrcJ2bLwh9xIc=", "last_login": "2021-12-12T17:26:21.244Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "email": "", "is_staff": true, "is_active": true, "date_joined": "2021-12-12T17:26:06.916Z", "groups": [], "user_permissions": []}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "products", "model": "characteristic"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "products", "model": "currency"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "products", "model": "image"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "products", "model": "product"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "products", "model": "productimage"}}, {"model": "contenttypes.contenttype", "pk": 12, "fields": {"app_label": "products", "model": "productcharacteristic"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "products", "model": "category"}}, {"model": "sessions.session", "pk": "swio12nkbn2sz0tx6a0kqzlc9wxa9wx1", "fields": {"session_data": ".eJxVjDsOwjAQBe_iGlm2_Kek5wzWeneNA8iR4qRC3B0ipYD2zcx7iQzb2vI2eMkTibPQ4vS7FcAH9x3QHfptljj3dZmK3BV50CGvM_Hzcrh_Bw1G-9Y22sTJB8su6eqd4pJCAReiMpUKOsRCFCJGqxk51FjJKA9ogkENSrw_6D84eQ:1mwSc9:6CF9sbMixinP_GGtv4mTBIbTtO84B0vOMkg7sFNJ9oc", "expire_date": "2021-12-26T17:26:21.250Z"}}, {"model": "products.currency", "pk": "006d6b0f-fe90-4a7d-83fa-0ba3024b3dd5", "fields": {"created_at": "2021-11-22T13:10:58.476Z", "updated_at": "2021-11-22T13:10:58.476Z", "name": "GBP", "exchange_rate": "0.74"}}, {"model": "products.currency", "pk": "57683acd-58d6-4e35-8249-f9743c1ad7be", "fields": {"created_at": "2021-11-22T13:06:10.194Z", "updated_at": "2021-11-22T13:06:10.194Z", "name": "RUB", "exchange_rate": "74.91"}}, {"model": "products.currency", "pk": "839b483d-240f-4500-9d32-c3ccbbb69b38", "fields": {"created_at": "2021-11-22T13:05:04.875Z", "updated_at": "2021-11-22T13:05:19.242Z", "name": "EUR", "exchange_rate": "0.89"}}, {"model": "products.currency", "pk": "844aee43-40a8-456b-80f7-11ec564867e4", "fields": {"created_at": "2021-11-22T13:11:32.342Z", "updated_at": "2021-11-22T13:11:32.342Z", "name": "AED", "exchange_rate": "3.67"}}, {"model": "products.currency", "pk": "990e22d0-78ce-4413-a5e3-003e91a18497", "fields": {"created_at": "2021-11-22T13:09:53.959Z", "updated_at": "2021-11-22T13:09:53.959Z", "name": "CAD", "exchange_rate": "1.26"}}, {"model": "products.currency", "pk": "d1217f3f-685c-4ff6-98f7-fce06ac1eaf3", "fields": {"created_at": "2021-11-22T13:04:42.003Z", "updated_at": "2021-11-22T13:04:42.003Z", "name": "USD", "exchange_rate": "1.00"}}, {"model": "products.currency", "pk": "d2f25bb8-667b-4446-9058-eb254907a0bc", "fields": {"created_at": "2021-11-22T13:08:38.180Z", "updated_at": "2021-11-22T13:08:38.180Z", "name": "IDR", "exchange_rate": "14257.95"}}, {"model": "products.currency", "pk": "d7a649fb-d324-432e-936a-bc64624a2a77", "fields": {"created_at": "2021-11-22T13:05:45.917Z", "updated_at": "2021-11-22T13:05:45.917Z", "name": "UAH", "exchange_rate": "26.68"}}, {"model": "products.currency", "pk": "dacaa5a1-bf92-4150-8837-80f9979b487f", "fields": {"created_at": "2021-11-22T13:09:18.299Z", "updated_at": "2021-11-22T13:09:18.299Z", "name": "PLN", "exchange_rate": "4.16"}}, {"model": "products.characteristic", "pk": "0452012c-6c26-463b-98af-b76b69cf51e9", "fields": {"created_at": "2021-11-22T12:53:00.498Z", "updated_at": "2021-11-22T12:53:00.498Z", "name": "Built-in memory", "value": "128 GB"}}, {"model": "products.characteristic", "pk": "4c94a175-6cb7-4cd5-a092-e7367018a349", "fields": {"created_at": "2021-11-22T12:54:57.255Z", "updated_at": "2021-11-22T12:54:57.255Z", "name": "Number of processor cores", "value": "8"}}, {"model": "products.characteristic", "pk": "76c6b6dc-b23f-45b2-bda0-6a5d773d2ed1", "fields": {"created_at": "2021-11-22T13:03:35.140Z", "updated_at": "2021-11-22T13:03:35.140Z", "name": "Battery capacity", "value": "5000 mAh"}}, {"model": "products.characteristic", "pk": "77cf20d5-53dc-470c-ab3f-629de52e1a86", "fields": {"created_at": "2021-11-22T12:59:00.145Z", "updated_at": "2021-11-22T12:59:00.145Z", "name": "CPU name", "value": "Qualсomm Snapdragon"}}, {"model": "products.characteristic", "pk": "a787a1dd-cd1b-4891-b9ba-4ff7cfbd76b7", "fields": {"created_at": "2021-11-22T12:58:29.017Z", "updated_at": "2021-11-22T12:58:29.017Z", "name": "Kernel type", "value": "Kryo 670"}}, {"model": "products.characteristic", "pk": "b0f64b37-2fa6-491b-b984-6430d9da8bdc", "fields": {"created_at": "2021-11-22T12:56:31.915Z", "updated_at": "2021-11-22T12:56:31.915Z", "name": "CPU frequency", "value": "2.4 GHz + 1.8 GHz"}}, {"model": "products.characteristic", "pk": "cbd2fa50-a04b-421f-a102-742d13db8079", "fields": {"created_at": "2021-11-22T12:57:24.956Z", "updated_at": "2021-11-22T12:57:24.956Z", "name": "The number of megapixels of the main camera", "value": "64 MP + 12 MP + 5 MP"}}, {"model": "products.characteristic", "pk": "cd3840b6-9c7b-48cb-86ec-a8a6f4f5444b", "fields": {"created_at": "2021-11-22T12:51:48.614Z", "updated_at": "2021-11-22T12:51:48.614Z", "name": "RAM", "value": "6 GB"}}, {"model": "products.characteristic", "pk": "e998281c-dc39-43b1-a6f8-93e5ebb3289d", "fields": {"created_at": "2021-11-22T13:02:30.821Z", "updated_at": "2021-11-22T13:02:30.821Z", "name": "Number of main cameras", "value": "3"}}, {"model": "products.characteristic", "pk": "ea816621-b831-4072-b3b6-994454a71baf", "fields": {"created_at": "2021-11-22T12:54:01.548Z", "updated_at": "2021-11-22T12:54:01.548Z", "name": "Operation System", "value": "Android"}}, {"model": "products.image", "pk": "832ac7c4-8627-45bf-a315-342f8e100f03", "fields": {"created_at": "2021-11-22T13:35:00.015Z", "updated_at": "2021-11-22T13:35:00.015Z", "image_url": "https://ireland.apollo.olxcdn.com/v1/files/vg8v5iprus54-UA/image;s=1000x700", "image": ""}}, {"model": "products.category", "pk": "1dbbf18c-4ab0-41c9-aa60-fc49d79b38fc", "fields": {"created_at": "2021-12-12T17:30:32.223Z", "updated_at": "2021-12-12T17:30:32.223Z", "slug": "kids-products", "name": "Kids products", "parent": null, "image": null, "lft": 1, "rght": 2, "tree_id": 2, "level": 0}}, {"model": "products.category", "pk": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4", "fields": {"created_at": "2021-11-22T12:22:43.850Z", "updated_at": "2021-12-12T16:15:48.232Z", "slug": "photo-and-videos", "name": "Photo and videos", "parent": "427bc808-6894-4b02-81b4-0b5d2618087d", "image": null, "lft": 6, "rght": 11, "tree_id": 4, "level": 1}}, {"model": "products.category", "pk": "367a2f33-17f5-479b-86b1-d85a71217ca6", "fields": {"created_at": "2021-11-22T12:12:24.671Z", "updated_at": "2021-12-12T16:15:48.214Z", "slug": "laptop-and-computers", "name": "Laptop and Computers", "parent": null, "image": null, "lft": 1, "rght": 6, "tree_id": 3, "level": 0}}, {"model": "products.category", "pk": "3775b54f-ee42-4ff5-8e2e-0fe60efbfa8f", "fields": {"created_at": "2021-11-22T12:20:53.109Z", "updated_at": "2021-12-12T16:15:48.230Z", "slug": "phones-accessories", "name": "Phones accessories", "parent": "427bc808-6894-4b02-81b4-0b5d2618087d", "image": null, "lft": 4, "rght": 5, "tree_id": 4, "level": 1}}, {"model": "products.category", "pk": "3ab6ab0d-8aaf-4e51-ada4-7caf3484f156", "fields": {"created_at": "2021-11-22T12:21:18.011Z", "updated_at": "2021-12-12T16:15:48.240Z", "slug": "tv", "name": "TV", "parent": "427bc808-6894-4b02-81b4-0b5d2618087d", "image": null, "lft": 12, "rght": 13, "tree_id": 4, "level": 1}}, {"model": "products.category", "pk": "3af1b486-59d9-4362-a147-930a8ec409e3", "fields": {"created_at": "2021-11-22T12:24:35.625Z", "updated_at": "2021-12-12T16:15:48.238Z", "slug": "video-cameras", "name": "Video Cameras", "parent": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4", "image": null, "lft": 9, "rght": 10, "tree_id": 4, "level": 2}}, {"model": "products.category", "pk": "427bc808-6894-4b02-81b4-0b5d2618087d", "fields": {"created_at": "2021-11-22T12:16:07.660Z", "updated_at": "2021-12-12T16:15:48.225Z", "slug": "phones-tv-and-electronics", "name": "Phones, TV and electronics", "parent": null, "image": null, "lft": 1, "rght": 14, "tree_id": 4, "level": 0}}, {"model": "products.category", "pk": "53abf56c-4bcf-4ef1-9bf8-980ad6e01a69", "fields": {"created_at": "2021-12-12T17:29:48.339Z", "updated_at": "2021-12-12T17:29:48.339Z", "slug": "cosmetology", "name": "cosmetology", "parent": null, "image": null, "lft": 1, "rght": 2, "tree_id": 1, "level": 0}}, {"model": "products.category", "pk": "82ed9978-c5a5-40e0-b95d-30596283db2a", "fields": {"created_at": "2021-11-22T12:23:49.360Z", "updated_at": "2021-12-12T16:15:48.235Z", "slug": "cameras", "name": "Cameras", "parent": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4", "image": null, "lft": 7, "rght": 8, "tree_id": 4, "level": 2}}, {"model": "products.category", "pk": "c813f16c-51c7-4a63-9315-4340a3cfe0be", "fields": {"created_at": "2021-11-22T12:12:38.016Z", "updated_at": "2021-12-12T16:15:48.221Z", "slug": "laptop", "name": "Laptop", "parent": "367a2f33-17f5-479b-86b1-d85a71217ca6", "image": null, "lft": 4, "rght": 5, "tree_id": 3, "level": 1}}, {"model": "products.category", "pk": "f1a7e72f-0be8-4af4-86c2-e40f39cd25af", "fields": {"created_at": "2021-11-22T12:16:35.363Z", "updated_at": "2021-12-12T16:15:48.227Z", "slug": "phones", "name": "Phones", "parent": "427bc808-6894-4b02-81b4-0b5d2618087d", "image": null, "lft": 2, "rght": 3, "tree_id": 4, "level": 1}}, {"model": "products.category", "pk": "f7c2963b-3127-4581-a5b9-5fa5e8b7437c", "fields": {"created_at": "2021-11-22T12:12:45.521Z", "updated_at": "2021-12-12T16:15:48.218Z", "slug": "computers", "name": "Computers", "parent": "367a2f33-17f5-479b-86b1-d85a71217ca6", "image": null, "lft": 2, "rght": 3, "tree_id": 3, "level": 1}}, {"model": "products.product", "pk": "11cc1515-5c07-490d-bea2-e59545466ffc", "fields": {"created_at": "2021-11-22T15:14:08.029Z", "updated_at": "2021-12-12T16:12:28.315Z", "slug": "samsung-galaxy-s21", "name": "Samsung Galaxy S21", "code": "272627166", "description": "You will never miss the perfect moment for a photo again. Meet the Galaxy S21. Created to revolutionize the world of video and photography. With a cinematic resolution of 8K, you can create incredible photos right from the video. Galaxy S21 is a 64 MP camera, the fastest processor in the Galaxy and a powerful battery for the whole day. Everything for a new level of experience.", "price": "906.00", "old_price": "0.00", "quantity": 1, "category": "f1a7e72f-0be8-4af4-86c2-e40f39cd25af"}}, {"model": "products.product", "pk": "2f0dbed6-f85c-4753-bdef-55647d157362", "fields": {"created_at": "2021-11-22T15:19:09.865Z", "updated_at": "2021-12-12T16:12:28.318Z", "slug": "canon-eos-800d-18-55mm-is-stm-black", "name": "Canon EOS 800D 18-55mm IS STM Black", "code": "16855730", "description": "The EOS 800D simplifies the process of creating high-quality photos, allowing you to take amazing photos and videos at important moments in your life. You will enjoy the bright optical viewfinder of this SLR camera, in which the world looks as it is.", "price": "868.00", "old_price": "0.00", "quantity": 1, "category": "82ed9978-c5a5-40e0-b95d-30596283db2a"}}, {"model": "products.product", "pk": "5c61ef8a-0565-4f42-aa21-b4f480372a06", "fields": {"created_at": "2021-11-22T15:17:15.733Z", "updated_at": "2021-12-12T16:12:28.320Z", "slug": "everest-home-4070", "name": "Everest Home 4070", "code": "37242776", "description": "To buy the Everest Home 4070 computer - means to get inexpensive, and at the same time the reliable decision for the most various daily tasks. The computer of this series will help to master skills of work with computer equipment, various office and multimedia applications, to enjoy modern dynamic games with a high level of detail of graphics.", "price": "660.00", "old_price": "0.00", "quantity": 1, "category": "f7c2963b-3127-4581-a5b9-5fa5e8b7437c"}}, {"model": "products.product", "pk": "7b58c8c5-a1bf-46bb-96bb-1d2691cb1bff", "fields": {"created_at": "2021-11-22T15:10:16.020Z", "updated_at": "2021-12-12T16:12:28.322Z", "slug": "asus-laptop-14-x409fa-bv593", "name": "Asus Laptop 14 X409FA-BV593", "code": "310972393", "description": "ASUS Laptop 14 X409 combines the advantages of different types of drives: high capacity and increased data transfer speed. It is recommended that you install the operating system and applications on a fast solid state drive, and use the hard disk to store large amounts of data, such as movie and music collections, and photo albums. In addition, the laptop supports Intel Optane memory, which can be used as a cache buffer to speed up communication with the hard drive.", "price": "434.00", "old_price": "0.00", "quantity": 1, "category": "c813f16c-51c7-4a63-9315-4340a3cfe0be"}}, {"model": "products.product", "pk": "90174df8-eea2-494e-9ce9-399e4931f7d7", "fields": {"created_at": "2021-11-22T15:22:28.579Z", "updated_at": "2021-12-12T16:12:28.325Z", "slug": "gopro-hero-10-black", "name": "GoPro HERO 10 Black", "code": "318002050", "description": "Matrix (light-sensitive element) 23.6 MP matrix with exceptional features: realistic image clarity, smooth motion transmission and impressive alignment of the horizon in the camera Media type Flash memory Zoom Touch zoom on the rear touch screen", "price": "577.00", "old_price": "0.00", "quantity": 1, "category": "3af1b486-59d9-4362-a147-930a8ec409e3"}}, {"model": "products.product", "pk": "ebb49688-cea4-40db-80d0-b97100f40e4f", "fields": {"created_at": "2021-11-22T15:07:52.539Z", "updated_at": "2021-12-12T16:12:28.327Z", "slug": "apple-macbook-air-13", "name": "Apple MacBook Air 13", "code": "245161909", "description": "Attention! All laptops have Cyrillic letters on the keyboard and are accompanied by an official warranty from the manufacturer! Before installing the software, please check the compatibility with the device indicated on the package, documentation or on the web", "price": "1226.00", "old_price": "0.00", "quantity": 1, "category": "c813f16c-51c7-4a63-9315-4340a3cfe0be"}}, {"model": "products.product", "pk": "eef85801-e523-44bb-aa7c-d964c63623b4", "fields": {"created_at": "2021-11-22T15:05:17.898Z", "updated_at": "2021-12-12T16:12:28.329Z", "slug": "acer-nitro-5-an515-57-54k7", "name": "Acer Nitro 5 AN515-57-54K7", "code": "322576183", "description": "Attention! All laptops have Cyrillic letters on the keyboard and are accompanied by an official warranty from the manufacturer! Before installing the software, please check the compatibility with the device indicated on the package, documentation or on the web", "price": "1132.00", "old_price": "0.00", "quantity": 1, "category": "c813f16c-51c7-4a63-9315-4340a3cfe0be"}}, {"model": "products.product", "pk": "f17f80f4-da17-415d-815b-eabab82b5f4d", "fields": {"created_at": "2021-11-22T14:54:21.024Z", "updated_at": "2021-12-12T16:12:28.331Z", "slug": "samsung-galaxy-m52", "name": "Samsung Galaxy M52", "code": "320841586", "description": "Borderless screen for maximum immersion The boundless 6.7-inch sAMOLED Plus screen of the Galaxy M52 provides natural color reproduction of the image at any time: during games, while watching movies and surfing the Internet. Enjoy the effect of maximum immersion during all your favorite activities.", "price": "415.00", "old_price": "0.00", "quantity": 1, "category": "f1a7e72f-0be8-4af4-86c2-e40f39cd25af"}}, {"model": "products.productimage", "pk": "a52b8907-e8eb-4be7-ad01-a493d367aaf2", "fields": {"created_at": "2021-11-22T15:28:24.099Z", "updated_at": "2021-11-22T15:28:24.099Z", "image": "832ac7c4-8627-45bf-a315-342f8e100f03", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d"}}, {"model": "products.productcharacteristic", "pk": "29d55ee5-59ee-4a40-97b0-4c493d41c399", "fields": {"created_at": "2021-11-22T15:27:12.193Z", "updated_at": "2021-11-22T15:27:12.193Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "ea816621-b831-4072-b3b6-994454a71baf"}}, {"model": "products.productcharacteristic", "pk": "433c55fc-4237-4018-bc9b-44bd13154744", "fields": {"created_at": "2021-11-22T15:26:31.107Z", "updated_at": "2021-11-22T15:26:31.107Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "cd3840b6-9c7b-48cb-86ec-a8a6f4f5444b"}}, {"model": "products.productcharacteristic", "pk": "478c22c8-6bb0-4e63-b2f8-d00f96554faf", "fields": {"created_at": "2021-11-22T15:27:44.090Z", "updated_at": "2021-11-22T15:27:44.090Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "cbd2fa50-a04b-421f-a102-742d13db8079"}}, {"model": "products.productcharacteristic", "pk": "7a8851e4-d5a2-427b-ae33-67cdc1292ba1", "fields": {"created_at": "2021-11-22T15:27:33.686Z", "updated_at": "2021-11-22T15:27:33.686Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "b0f64b37-2fa6-491b-b984-6430d9da8bdc"}}, {"model": "products.productcharacteristic", "pk": "a3017954-36cf-40a5-9518-5fd0d1b261dc", "fields": {"created_at": "2021-11-22T15:28:09.754Z", "updated_at": "2021-11-22T15:28:09.754Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "e998281c-dc39-43b1-a6f8-93e5ebb3289d"}}, {"model": "products.productcharacteristic", "pk": "b8821aa4-2b5d-47ef-a86b-b1899645774b", "fields": {"created_at": "2021-11-22T15:27:25.367Z", "updated_at": "2021-11-22T15:27:25.367Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "4c94a175-6cb7-4cd5-a092-e7367018a349"}}, {"model": "products.productcharacteristic", "pk": "c402b143-9b8a-4fd3-a99b-76de5cc7ba99", "fields": {"created_at": "2021-11-22T15:27:05.599Z", "updated_at": "2021-11-22T15:27:05.599Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "0452012c-6c26-463b-98af-b76b69cf51e9"}}, {"model": "products.productcharacteristic", "pk": "e24888c5-db1c-4a79-a3e5-ce4f10a82aa9", "fields": {"created_at": "2021-11-22T15:28:02.543Z", "updated_at": "2021-11-22T15:28:02.543Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "77cf20d5-53dc-470c-ab3f-629de52e1a86"}}, {"model": "products.productcharacteristic", "pk": "f2b8c6d9-ddb1-460d-aa45-d91220edd7b9", "fields": {"created_at": "2021-11-22T15:27:56.652Z", "updated_at": "2021-11-22T15:27:56.652Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "a787a1dd-cd1b-4891-b9ba-4ff7cfbd76b7"}}, {"model": "products.productcharacteristic", "pk": "fb6df9da-66f1-458b-9acf-c787fe2b1930", "fields": {"created_at": "2021-11-22T15:28:15.430Z", "updated_at": "2021-11-22T15:28:15.430Z", "product": "f17f80f4-da17-415d-815b-eabab82b5f4d", "characteristic": "76c6b6dc-b23f-45b2-bda0-6a5d773d2ed1"}}]
+[
+  {
+    "model": "products.currency",
+    "pk": "006d6b0f-fe90-4a7d-83fa-0ba3024b3dd5",
+    "fields": {
+      "created_at": "2021-11-22T13:10:58.476Z",
+      "updated_at": "2021-11-22T13:10:58.476Z",
+      "name": "GBP",
+      "exchange_rate": "0.74"
+    }
+  },
+  {
+    "model": "products.currency",
+    "pk": "57683acd-58d6-4e35-8249-f9743c1ad7be",
+    "fields": {
+      "created_at": "2021-11-22T13:06:10.194Z",
+      "updated_at": "2021-11-22T13:06:10.194Z",
+      "name": "RUB",
+      "exchange_rate": "74.91"
+    }
+  },
+  {
+    "model": "products.currency",
+    "pk": "839b483d-240f-4500-9d32-c3ccbbb69b38",
+    "fields": {
+      "created_at": "2021-11-22T13:05:04.875Z",
+      "updated_at": "2021-11-22T13:05:19.242Z",
+      "name": "EUR",
+      "exchange_rate": "0.89"
+    }
+  },
+  {
+    "model": "products.currency",
+    "pk": "844aee43-40a8-456b-80f7-11ec564867e4",
+    "fields": {
+      "created_at": "2021-11-22T13:11:32.342Z",
+      "updated_at": "2021-11-22T13:11:32.342Z",
+      "name": "AED",
+      "exchange_rate": "3.67"
+    }
+  },
+  {
+    "model": "products.currency",
+    "pk": "990e22d0-78ce-4413-a5e3-003e91a18497",
+    "fields": {
+      "created_at": "2021-11-22T13:09:53.959Z",
+      "updated_at": "2021-11-22T13:09:53.959Z",
+      "name": "CAD",
+      "exchange_rate": "1.26"
+    }
+  },
+  {
+    "model": "products.currency",
+    "pk": "d1217f3f-685c-4ff6-98f7-fce06ac1eaf3",
+    "fields": {
+      "created_at": "2021-11-22T13:04:42.003Z",
+      "updated_at": "2021-11-22T13:04:42.003Z",
+      "name": "USD",
+      "exchange_rate": "1.00"
+    }
+  },
+  {
+    "model": "products.currency",
+    "pk": "d2f25bb8-667b-4446-9058-eb254907a0bc",
+    "fields": {
+      "created_at": "2021-11-22T13:08:38.180Z",
+      "updated_at": "2021-11-22T13:08:38.180Z",
+      "name": "IDR",
+      "exchange_rate": "14257.95"
+    }
+  },
+  {
+    "model": "products.currency",
+    "pk": "d7a649fb-d324-432e-936a-bc64624a2a77",
+    "fields": {
+      "created_at": "2021-11-22T13:05:45.917Z",
+      "updated_at": "2021-11-22T13:05:45.917Z",
+      "name": "UAH",
+      "exchange_rate": "26.68"
+    }
+  },
+  {
+    "model": "products.currency",
+    "pk": "dacaa5a1-bf92-4150-8837-80f9979b487f",
+    "fields": {
+      "created_at": "2021-11-22T13:09:18.299Z",
+      "updated_at": "2021-11-22T13:09:18.299Z",
+      "name": "PLN",
+      "exchange_rate": "4.16"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "0452012c-6c26-463b-98af-b76b69cf51e9",
+    "fields": {
+      "created_at": "2021-11-22T12:53:00.498Z",
+      "updated_at": "2021-11-22T12:53:00.498Z",
+      "name": "Built-in memory",
+      "value": "128 GB"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "4c94a175-6cb7-4cd5-a092-e7367018a349",
+    "fields": {
+      "created_at": "2021-11-22T12:54:57.255Z",
+      "updated_at": "2021-11-22T12:54:57.255Z",
+      "name": "Number of processor cores",
+      "value": "8"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "76c6b6dc-b23f-45b2-bda0-6a5d773d2ed1",
+    "fields": {
+      "created_at": "2021-11-22T13:03:35.140Z",
+      "updated_at": "2021-11-22T13:03:35.140Z",
+      "name": "Battery capacity",
+      "value": "5000 mAh"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "77cf20d5-53dc-470c-ab3f-629de52e1a86",
+    "fields": {
+      "created_at": "2021-11-22T12:59:00.145Z",
+      "updated_at": "2021-11-22T12:59:00.145Z",
+      "name": "CPU name",
+      "value": "Qualсomm Snapdragon"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "a787a1dd-cd1b-4891-b9ba-4ff7cfbd76b7",
+    "fields": {
+      "created_at": "2021-11-22T12:58:29.017Z",
+      "updated_at": "2021-11-22T12:58:29.017Z",
+      "name": "Kernel type",
+      "value": "Kryo 670"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "b0f64b37-2fa6-491b-b984-6430d9da8bdc",
+    "fields": {
+      "created_at": "2021-11-22T12:56:31.915Z",
+      "updated_at": "2021-11-22T12:56:31.915Z",
+      "name": "CPU frequency",
+      "value": "2.4 GHz + 1.8 GHz"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "cbd2fa50-a04b-421f-a102-742d13db8079",
+    "fields": {
+      "created_at": "2021-11-22T12:57:24.956Z",
+      "updated_at": "2021-11-22T12:57:24.956Z",
+      "name": "The number of megapixels of the main camera",
+      "value": "64 MP + 12 MP + 5 MP"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "cd3840b6-9c7b-48cb-86ec-a8a6f4f5444b",
+    "fields": {
+      "created_at": "2021-11-22T12:51:48.614Z",
+      "updated_at": "2021-11-22T12:51:48.614Z",
+      "name": "RAM",
+      "value": "6 GB"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "e998281c-dc39-43b1-a6f8-93e5ebb3289d",
+    "fields": {
+      "created_at": "2021-11-22T13:02:30.821Z",
+      "updated_at": "2021-11-22T13:02:30.821Z",
+      "name": "Number of main cameras",
+      "value": "3"
+    }
+  },
+  {
+    "model": "products.characteristic",
+    "pk": "ea816621-b831-4072-b3b6-994454a71baf",
+    "fields": {
+      "created_at": "2021-11-22T12:54:01.548Z",
+      "updated_at": "2021-11-22T12:54:01.548Z",
+      "name": "Operation System",
+      "value": "Android"
+    }
+  },
+  {
+    "model": "products.image",
+    "pk": "832ac7c4-8627-45bf-a315-342f8e100f03",
+    "fields": {
+      "created_at": "2021-11-22T13:35:00.015Z",
+      "updated_at": "2021-11-22T13:35:00.015Z",
+      "image_url": "https://ireland.apollo.olxcdn.com/v1/files/vg8v5iprus54-UA/image;s=1000x700",
+      "image": ""
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "1dbbf18c-4ab0-41c9-aa60-fc49d79b38fc",
+    "fields": {
+      "created_at": "2021-12-12T17:30:32.223Z",
+      "updated_at": "2021-12-12T17:30:32.223Z",
+      "slug": "kids-products",
+      "name": "Kids products",
+      "parent": null,
+      "image": null,
+      "lft": 1,
+      "rght": 2,
+      "tree_id": 2,
+      "level": 0
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4",
+    "fields": {
+      "created_at": "2021-11-22T12:22:43.850Z",
+      "updated_at": "2021-12-12T16:15:48.232Z",
+      "slug": "photo-and-videos",
+      "name": "Photo and videos",
+      "parent": "427bc808-6894-4b02-81b4-0b5d2618087d",
+      "image": null,
+      "lft": 6,
+      "rght": 11,
+      "tree_id": 4,
+      "level": 1
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "367a2f33-17f5-479b-86b1-d85a71217ca6",
+    "fields": {
+      "created_at": "2021-11-22T12:12:24.671Z",
+      "updated_at": "2021-12-12T16:15:48.214Z",
+      "slug": "laptop-and-computers",
+      "name": "Laptop and Computers",
+      "parent": null,
+      "image": null,
+      "lft": 1,
+      "rght": 6,
+      "tree_id": 3,
+      "level": 0
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "3775b54f-ee42-4ff5-8e2e-0fe60efbfa8f",
+    "fields": {
+      "created_at": "2021-11-22T12:20:53.109Z",
+      "updated_at": "2021-12-12T16:15:48.230Z",
+      "slug": "phones-accessories",
+      "name": "Phones accessories",
+      "parent": "427bc808-6894-4b02-81b4-0b5d2618087d",
+      "image": null,
+      "lft": 4,
+      "rght": 5,
+      "tree_id": 4,
+      "level": 1
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "3ab6ab0d-8aaf-4e51-ada4-7caf3484f156",
+    "fields": {
+      "created_at": "2021-11-22T12:21:18.011Z",
+      "updated_at": "2021-12-12T16:15:48.240Z",
+      "slug": "tv",
+      "name": "TV",
+      "parent": "427bc808-6894-4b02-81b4-0b5d2618087d",
+      "image": null,
+      "lft": 12,
+      "rght": 13,
+      "tree_id": 4,
+      "level": 1
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "3af1b486-59d9-4362-a147-930a8ec409e3",
+    "fields": {
+      "created_at": "2021-11-22T12:24:35.625Z",
+      "updated_at": "2021-12-12T16:15:48.238Z",
+      "slug": "video-cameras",
+      "name": "Video Cameras",
+      "parent": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4",
+      "image": null,
+      "lft": 9,
+      "rght": 10,
+      "tree_id": 4,
+      "level": 2
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "427bc808-6894-4b02-81b4-0b5d2618087d",
+    "fields": {
+      "created_at": "2021-11-22T12:16:07.660Z",
+      "updated_at": "2021-12-12T16:15:48.225Z",
+      "slug": "phones-tv-and-electronics",
+      "name": "Phones, TV and electronics",
+      "parent": null,
+      "image": null,
+      "lft": 1,
+      "rght": 14,
+      "tree_id": 4,
+      "level": 0
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "53abf56c-4bcf-4ef1-9bf8-980ad6e01a69",
+    "fields": {
+      "created_at": "2021-12-12T17:29:48.339Z",
+      "updated_at": "2021-12-12T17:29:48.339Z",
+      "slug": "cosmetology",
+      "name": "cosmetology",
+      "parent": null,
+      "image": null,
+      "lft": 1,
+      "rght": 2,
+      "tree_id": 1,
+      "level": 0
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "82ed9978-c5a5-40e0-b95d-30596283db2a",
+    "fields": {
+      "created_at": "2021-11-22T12:23:49.360Z",
+      "updated_at": "2021-12-12T16:15:48.235Z",
+      "slug": "cameras",
+      "name": "Cameras",
+      "parent": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4",
+      "image": null,
+      "lft": 7,
+      "rght": 8,
+      "tree_id": 4,
+      "level": 2
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "c813f16c-51c7-4a63-9315-4340a3cfe0be",
+    "fields": {
+      "created_at": "2021-11-22T12:12:38.016Z",
+      "updated_at": "2021-12-12T16:15:48.221Z",
+      "slug": "laptop",
+      "name": "Laptop",
+      "parent": "367a2f33-17f5-479b-86b1-d85a71217ca6",
+      "image": null,
+      "lft": 4,
+      "rght": 5,
+      "tree_id": 3,
+      "level": 1
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "f1a7e72f-0be8-4af4-86c2-e40f39cd25af",
+    "fields": {
+      "created_at": "2021-11-22T12:16:35.363Z",
+      "updated_at": "2021-12-12T16:15:48.227Z",
+      "slug": "phones",
+      "name": "Phones",
+      "parent": "427bc808-6894-4b02-81b4-0b5d2618087d",
+      "image": null,
+      "lft": 2,
+      "rght": 3,
+      "tree_id": 4,
+      "level": 1
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": "f7c2963b-3127-4581-a5b9-5fa5e8b7437c",
+    "fields": {
+      "created_at": "2021-11-22T12:12:45.521Z",
+      "updated_at": "2021-12-12T16:15:48.218Z",
+      "slug": "computers",
+      "name": "Computers",
+      "parent": "367a2f33-17f5-479b-86b1-d85a71217ca6",
+      "image": null,
+      "lft": 2,
+      "rght": 3,
+      "tree_id": 3,
+      "level": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": "11cc1515-5c07-490d-bea2-e59545466ffc",
+    "fields": {
+      "created_at": "2021-11-22T15:14:08.029Z",
+      "updated_at": "2021-12-12T16:12:28.315Z",
+      "slug": "samsung-galaxy-s21",
+      "name": "Samsung Galaxy S21",
+      "code": "272627166",
+      "description": "You will never miss the perfect moment for a photo again. Meet the Galaxy S21. Created to revolutionize the world of video and photography. With a cinematic resolution of 8K, you can create incredible photos right from the video. Galaxy S21 is a 64 MP camera, the fastest processor in the Galaxy and a powerful battery for the whole day. Everything for a new level of experience.",
+      "price": "906.00",
+      "old_price": "0.00",
+      "quantity": 1,
+      "category": "f1a7e72f-0be8-4af4-86c2-e40f39cd25af"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": "2f0dbed6-f85c-4753-bdef-55647d157362",
+    "fields": {
+      "created_at": "2021-11-22T15:19:09.865Z",
+      "updated_at": "2021-12-12T16:12:28.318Z",
+      "slug": "canon-eos-800d-18-55mm-is-stm-black",
+      "name": "Canon EOS 800D 18-55mm IS STM Black",
+      "code": "16855730",
+      "description": "The EOS 800D simplifies the process of creating high-quality photos, allowing you to take amazing photos and videos at important moments in your life. You will enjoy the bright optical viewfinder of this SLR camera, in which the world looks as it is.",
+      "price": "868.00",
+      "old_price": "0.00",
+      "quantity": 1,
+      "category": "82ed9978-c5a5-40e0-b95d-30596283db2a"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": "5c61ef8a-0565-4f42-aa21-b4f480372a06",
+    "fields": {
+      "created_at": "2021-11-22T15:17:15.733Z",
+      "updated_at": "2021-12-12T16:12:28.320Z",
+      "slug": "everest-home-4070",
+      "name": "Everest Home 4070",
+      "code": "37242776",
+      "description": "To buy the Everest Home 4070 computer - means to get inexpensive, and at the same time the reliable decision for the most various daily tasks. The computer of this series will help to master skills of work with computer equipment, various office and multimedia applications, to enjoy modern dynamic games with a high level of detail of graphics.",
+      "price": "660.00",
+      "old_price": "0.00",
+      "quantity": 1,
+      "category": "f7c2963b-3127-4581-a5b9-5fa5e8b7437c"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": "7b58c8c5-a1bf-46bb-96bb-1d2691cb1bff",
+    "fields": {
+      "created_at": "2021-11-22T15:10:16.020Z",
+      "updated_at": "2021-12-12T16:12:28.322Z",
+      "slug": "asus-laptop-14-x409fa-bv593",
+      "name": "Asus Laptop 14 X409FA-BV593",
+      "code": "310972393",
+      "description": "ASUS Laptop 14 X409 combines the advantages of different types of drives: high capacity and increased data transfer speed. It is recommended that you install the operating system and applications on a fast solid state drive, and use the hard disk to store large amounts of data, such as movie and music collections, and photo albums. In addition, the laptop supports Intel Optane memory, which can be used as a cache buffer to speed up communication with the hard drive.",
+      "price": "434.00",
+      "old_price": "0.00",
+      "quantity": 1,
+      "category": "c813f16c-51c7-4a63-9315-4340a3cfe0be"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": "90174df8-eea2-494e-9ce9-399e4931f7d7",
+    "fields": {
+      "created_at": "2021-11-22T15:22:28.579Z",
+      "updated_at": "2021-12-12T16:12:28.325Z",
+      "slug": "gopro-hero-10-black",
+      "name": "GoPro HERO 10 Black",
+      "code": "318002050",
+      "description": "Matrix (light-sensitive element) 23.6 MP matrix with exceptional features: realistic image clarity, smooth motion transmission and impressive alignment of the horizon in the camera Media type Flash memory Zoom Touch zoom on the rear touch screen",
+      "price": "577.00",
+      "old_price": "0.00",
+      "quantity": 1,
+      "category": "3af1b486-59d9-4362-a147-930a8ec409e3"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": "ebb49688-cea4-40db-80d0-b97100f40e4f",
+    "fields": {
+      "created_at": "2021-11-22T15:07:52.539Z",
+      "updated_at": "2021-12-12T16:12:28.327Z",
+      "slug": "apple-macbook-air-13",
+      "name": "Apple MacBook Air 13",
+      "code": "245161909",
+      "description": "Attention! All laptops have Cyrillic letters on the keyboard and are accompanied by an official warranty from the manufacturer! Before installing the software, please check the compatibility with the device indicated on the package, documentation or on the web",
+      "price": "1226.00",
+      "old_price": "0.00",
+      "quantity": 1,
+      "category": "c813f16c-51c7-4a63-9315-4340a3cfe0be"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": "eef85801-e523-44bb-aa7c-d964c63623b4",
+    "fields": {
+      "created_at": "2021-11-22T15:05:17.898Z",
+      "updated_at": "2021-12-12T16:12:28.329Z",
+      "slug": "acer-nitro-5-an515-57-54k7",
+      "name": "Acer Nitro 5 AN515-57-54K7",
+      "code": "322576183",
+      "description": "Attention! All laptops have Cyrillic letters on the keyboard and are accompanied by an official warranty from the manufacturer! Before installing the software, please check the compatibility with the device indicated on the package, documentation or on the web",
+      "price": "1132.00",
+      "old_price": "0.00",
+      "quantity": 1,
+      "category": "c813f16c-51c7-4a63-9315-4340a3cfe0be"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+    "fields": {
+      "created_at": "2021-11-22T14:54:21.024Z",
+      "updated_at": "2021-12-12T16:12:28.331Z",
+      "slug": "samsung-galaxy-m52",
+      "name": "Samsung Galaxy M52",
+      "code": "320841586",
+      "description": "Borderless screen for maximum immersion The boundless 6.7-inch sAMOLED Plus screen of the Galaxy M52 provides natural color reproduction of the image at any time: during games, while watching movies and surfing the Internet. Enjoy the effect of maximum immersion during all your favorite activities.",
+      "price": "415.00",
+      "old_price": "0.00",
+      "quantity": 1,
+      "category": "f1a7e72f-0be8-4af4-86c2-e40f39cd25af"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": "a52b8907-e8eb-4be7-ad01-a493d367aaf2",
+    "fields": {
+      "created_at": "2021-11-22T15:28:24.099Z",
+      "updated_at": "2021-11-22T15:28:24.099Z",
+      "image": "832ac7c4-8627-45bf-a315-342f8e100f03",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "29d55ee5-59ee-4a40-97b0-4c493d41c399",
+    "fields": {
+      "created_at": "2021-11-22T15:27:12.193Z",
+      "updated_at": "2021-11-22T15:27:12.193Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "ea816621-b831-4072-b3b6-994454a71baf"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "433c55fc-4237-4018-bc9b-44bd13154744",
+    "fields": {
+      "created_at": "2021-11-22T15:26:31.107Z",
+      "updated_at": "2021-11-22T15:26:31.107Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "cd3840b6-9c7b-48cb-86ec-a8a6f4f5444b"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "478c22c8-6bb0-4e63-b2f8-d00f96554faf",
+    "fields": {
+      "created_at": "2021-11-22T15:27:44.090Z",
+      "updated_at": "2021-11-22T15:27:44.090Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "cbd2fa50-a04b-421f-a102-742d13db8079"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "7a8851e4-d5a2-427b-ae33-67cdc1292ba1",
+    "fields": {
+      "created_at": "2021-11-22T15:27:33.686Z",
+      "updated_at": "2021-11-22T15:27:33.686Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "b0f64b37-2fa6-491b-b984-6430d9da8bdc"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "a3017954-36cf-40a5-9518-5fd0d1b261dc",
+    "fields": {
+      "created_at": "2021-11-22T15:28:09.754Z",
+      "updated_at": "2021-11-22T15:28:09.754Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "e998281c-dc39-43b1-a6f8-93e5ebb3289d"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "b8821aa4-2b5d-47ef-a86b-b1899645774b",
+    "fields": {
+      "created_at": "2021-11-22T15:27:25.367Z",
+      "updated_at": "2021-11-22T15:27:25.367Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "4c94a175-6cb7-4cd5-a092-e7367018a349"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "c402b143-9b8a-4fd3-a99b-76de5cc7ba99",
+    "fields": {
+      "created_at": "2021-11-22T15:27:05.599Z",
+      "updated_at": "2021-11-22T15:27:05.599Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "0452012c-6c26-463b-98af-b76b69cf51e9"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "e24888c5-db1c-4a79-a3e5-ce4f10a82aa9",
+    "fields": {
+      "created_at": "2021-11-22T15:28:02.543Z",
+      "updated_at": "2021-11-22T15:28:02.543Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "77cf20d5-53dc-470c-ab3f-629de52e1a86"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "f2b8c6d9-ddb1-460d-aa45-d91220edd7b9",
+    "fields": {
+      "created_at": "2021-11-22T15:27:56.652Z",
+      "updated_at": "2021-11-22T15:27:56.652Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "a787a1dd-cd1b-4891-b9ba-4ff7cfbd76b7"
+    }
+  },
+  {
+    "model": "products.productcharacteristic",
+    "pk": "fb6df9da-66f1-458b-9acf-c787fe2b1930",
+    "fields": {
+      "created_at": "2021-11-22T15:28:15.430Z",
+      "updated_at": "2021-11-22T15:28:15.430Z",
+      "product": "f17f80f4-da17-415d-815b-eabab82b5f4d",
+      "characteristic": "76c6b6dc-b23f-45b2-bda0-6a5d773d2ed1"
+    }
+  }
+]
