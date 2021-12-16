@@ -28,7 +28,6 @@ class SlugModel(models.Model):
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.name)
-            get_obj_by_slug = self.__class__.objects.filter(slug=self.slug)
-            if get_obj_by_slug:
+            if self.__class__.objects.filter(slug=self.slug).exists():
                 self.slug = self.slug + "-" + str(self.id)[: int(len(str(self.id)) / 2)]
         super(SlugModel, self).save(*args, **kwargs)
