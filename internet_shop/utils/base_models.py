@@ -1,6 +1,7 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 import uuid
+from utils.constants import SLUG_LENGTH
 
 
 class BaseModel(models.Model):
@@ -19,11 +20,15 @@ class BaseModel(models.Model):
 
 
 class SlugModel(models.Model):
-    slug = models.SlugField(unique=True, null=True, default=None, blank=True)
+    slug = models.SlugField(unique=True, null=True, default=None, blank=True, max_length=SLUG_LENGTH)
 
     class Meta:
         abstract = True
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.name)
+        if not self.slug:
+            self.slug = slugify(self.name)
+            get_obj_by_slug = self.__class__.objects.filter(slug=self.slug)
+            if get_obj_by_slug:
+                self.slug = self.slug + "-" + str(self.id)[: int(len(str(self.id)) / 2)]
         super(SlugModel, self).save(*args, **kwargs)
