@@ -1,5 +1,5 @@
 from django.test import TransactionTestCase
-from .models import Catalog, Currency, Product, Characteristic
+from .models import Category, Currency, Product, Characteristic
 from django.db.utils import DataError, IntegrityError
 from django.core.exceptions import ValidationError
 
@@ -12,12 +12,12 @@ class CatalogTestCase(TransactionTestCase):
     computer_text = "Computer"
 
     def setUp(self):
-        computer_laptops = Catalog.objects.create(id=self.parent_id_text, name=self.computer_laptops_text)
-        Catalog.objects.create(name=self.computer_text, parent=computer_laptops)
+        computer_laptops = Category.objects.create(id=self.parent_id_text, name=self.computer_laptops_text)
+        Category.objects.create(name=self.computer_text, parent=computer_laptops)
 
     def test_success_create_get_delete_methods(self):
-        computer_laptops = Catalog.objects.get(name=self.computer_laptops_text)
-        laptops = Catalog.objects.create(name=self.laptop_text, parent=computer_laptops)
+        computer_laptops = Category.objects.get(name=self.computer_laptops_text)
+        laptops = Category.objects.create(name=self.laptop_text, parent=computer_laptops)
         self.assertEqual(computer_laptops.name, self.computer_laptops_text)
         self.assertEqual(str(computer_laptops.id), self.parent_id_text)
         self.assertTrue(laptops)
@@ -29,8 +29,8 @@ class CatalogTestCase(TransactionTestCase):
     def test_success_update_method(self):
         update_laptop_text = "Not Laptops"
         equipment_text = "Equipment"
-        computer_laptops = Catalog.objects.get(name=self.computer_laptops_text)
-        equipment = Catalog.objects.create(name=equipment_text)
+        computer_laptops = Category.objects.get(name=self.computer_laptops_text)
+        equipment = Category.objects.create(name=equipment_text)
         computer_laptops.name = update_laptop_text
         computer_laptops.id = self.computer_id_upd
         computer_laptops.parent = equipment
@@ -41,18 +41,18 @@ class CatalogTestCase(TransactionTestCase):
 
     def test_fail_methods(self):
         huge_text = "a" * 300
-        self.assertRaises(ValueError, Catalog.objects.create, name=self.laptop_text, parent="fail")
-        self.assertRaises(DataError, Catalog.objects.create, id=20, name=self.id)
-        self.assertRaises(DataError, Catalog.objects.create, name=huge_text)
-        self.assertRaises(ValidationError, Catalog.objects.get, parent="fwafwa")
-        self.assertRaises(IntegrityError, Catalog.objects.create, id=self.parent_id_text, name=self.computer_laptops_text)
-        computer_laptops = Catalog.objects.get(name=self.computer_laptops_text)
+        self.assertRaises(ValueError, Category.objects.create, name=self.laptop_text, parent="fail")
+        self.assertRaises(DataError, Category.objects.create, id=20, name=self.id)
+        self.assertRaises(DataError, Category.objects.create, name=huge_text)
+        self.assertRaises(ValidationError, Category.objects.get, parent="fwafwa")
+        self.assertRaises(IntegrityError, Category.objects.create, id=self.parent_id_text, name=self.computer_laptops_text)
+        computer_laptops = Category.objects.get(name=self.computer_laptops_text)
         computer_laptops.name = huge_text
         self.assertRaises(DataError, computer_laptops.save)
         computer_laptops.delete()
         try:
-            computer_laptops = Catalog.objects.get(name=self.computer_laptops_text)
-        except Catalog.DoesNotExist:
+            computer_laptops = Category.objects.get(name=self.computer_laptops_text)
+        except Category.DoesNotExist:
             computer_laptops = 'Catalog.DoesNotExist'
         self.assertEqual('Catalog.DoesNotExist', computer_laptops)
 
@@ -109,8 +109,8 @@ class CurrencyTestCase(TransactionTestCase):
         self.assertRaises(DataError, currency.save)
         currency.delete()
         try:
-            currency = Catalog.objects.get(name=self.currency_text)
-        except Catalog.DoesNotExist:
+            currency = Category.objects.get(name=self.currency_text)
+        except Category.DoesNotExist:
             currency = 'Currency.DoesNotExist'
         self.assertEqual('Currency.DoesNotExist', currency)
 

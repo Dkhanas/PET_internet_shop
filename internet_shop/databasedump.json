@@ -200,152 +200,194 @@
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
+    "pk": "1dbbf18c-4ab0-41c9-aa60-fc49d79b38fc",
+    "fields": {
+      "created_at": "2021-12-12T17:30:32.223Z",
+      "updated_at": "2021-12-12T17:30:32.223Z",
+      "slug": "kids-products",
+      "name": "Kids products",
+      "parent": null,
+      "image": null,
+      "lft": 1,
+      "rght": 2,
+      "tree_id": 2,
+      "level": 0
+    }
+  },
+  {
+    "model": "products.category",
     "pk": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4",
     "fields": {
       "created_at": "2021-11-22T12:22:43.850Z",
-      "updated_at": "2021-11-22T12:22:43.850Z",
+      "updated_at": "2021-12-12T16:15:48.232Z",
+      "slug": "photo-and-videos",
       "name": "Photo and videos",
       "parent": "427bc808-6894-4b02-81b4-0b5d2618087d",
       "image": null,
       "lft": 6,
       "rght": 11,
-      "tree_id": 2,
+      "tree_id": 4,
       "level": 1
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
     "pk": "367a2f33-17f5-479b-86b1-d85a71217ca6",
     "fields": {
       "created_at": "2021-11-22T12:12:24.671Z",
-      "updated_at": "2021-11-22T12:12:24.671Z",
+      "updated_at": "2021-12-12T16:15:48.214Z",
+      "slug": "laptop-and-computers",
       "name": "Laptop and Computers",
       "parent": null,
       "image": null,
       "lft": 1,
       "rght": 6,
-      "tree_id": 1,
+      "tree_id": 3,
       "level": 0
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
     "pk": "3775b54f-ee42-4ff5-8e2e-0fe60efbfa8f",
     "fields": {
       "created_at": "2021-11-22T12:20:53.109Z",
-      "updated_at": "2021-11-22T12:20:53.109Z",
+      "updated_at": "2021-12-12T16:15:48.230Z",
+      "slug": "phones-accessories",
       "name": "Phones accessories",
       "parent": "427bc808-6894-4b02-81b4-0b5d2618087d",
       "image": null,
       "lft": 4,
       "rght": 5,
-      "tree_id": 2,
+      "tree_id": 4,
       "level": 1
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
     "pk": "3ab6ab0d-8aaf-4e51-ada4-7caf3484f156",
     "fields": {
       "created_at": "2021-11-22T12:21:18.011Z",
-      "updated_at": "2021-11-22T12:21:18.011Z",
+      "updated_at": "2021-12-12T16:15:48.240Z",
+      "slug": "tv",
       "name": "TV",
       "parent": "427bc808-6894-4b02-81b4-0b5d2618087d",
       "image": null,
       "lft": 12,
       "rght": 13,
-      "tree_id": 2,
+      "tree_id": 4,
       "level": 1
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
     "pk": "3af1b486-59d9-4362-a147-930a8ec409e3",
     "fields": {
       "created_at": "2021-11-22T12:24:35.625Z",
-      "updated_at": "2021-11-22T12:24:35.625Z",
+      "updated_at": "2021-12-12T16:15:48.238Z",
+      "slug": "video-cameras",
       "name": "Video Cameras",
       "parent": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4",
       "image": null,
       "lft": 9,
       "rght": 10,
-      "tree_id": 2,
+      "tree_id": 4,
       "level": 2
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
     "pk": "427bc808-6894-4b02-81b4-0b5d2618087d",
     "fields": {
       "created_at": "2021-11-22T12:16:07.660Z",
-      "updated_at": "2021-11-22T12:16:07.660Z",
+      "updated_at": "2021-12-12T16:15:48.225Z",
+      "slug": "phones-tv-and-electronics",
       "name": "Phones, TV and electronics",
       "parent": null,
       "image": null,
       "lft": 1,
       "rght": 14,
-      "tree_id": 2,
+      "tree_id": 4,
       "level": 0
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
+    "pk": "53abf56c-4bcf-4ef1-9bf8-980ad6e01a69",
+    "fields": {
+      "created_at": "2021-12-12T17:29:48.339Z",
+      "updated_at": "2021-12-12T17:29:48.339Z",
+      "slug": "cosmetology",
+      "name": "cosmetology",
+      "parent": null,
+      "image": null,
+      "lft": 1,
+      "rght": 2,
+      "tree_id": 1,
+      "level": 0
+    }
+  },
+  {
+    "model": "products.category",
     "pk": "82ed9978-c5a5-40e0-b95d-30596283db2a",
     "fields": {
       "created_at": "2021-11-22T12:23:49.360Z",
-      "updated_at": "2021-11-22T12:23:49.360Z",
+      "updated_at": "2021-12-12T16:15:48.235Z",
+      "slug": "cameras",
       "name": "Cameras",
       "parent": "1edef63f-b2cc-4bc0-8a28-cad475fb2bb4",
       "image": null,
       "lft": 7,
       "rght": 8,
-      "tree_id": 2,
+      "tree_id": 4,
       "level": 2
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
     "pk": "c813f16c-51c7-4a63-9315-4340a3cfe0be",
     "fields": {
       "created_at": "2021-11-22T12:12:38.016Z",
-      "updated_at": "2021-11-22T12:12:38.016Z",
+      "updated_at": "2021-12-12T16:15:48.221Z",
+      "slug": "laptop",
       "name": "Laptop",
       "parent": "367a2f33-17f5-479b-86b1-d85a71217ca6",
       "image": null,
       "lft": 4,
       "rght": 5,
-      "tree_id": 1,
+      "tree_id": 3,
       "level": 1
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
     "pk": "f1a7e72f-0be8-4af4-86c2-e40f39cd25af",
     "fields": {
       "created_at": "2021-11-22T12:16:35.363Z",
-      "updated_at": "2021-11-22T12:16:35.363Z",
+      "updated_at": "2021-12-12T16:15:48.227Z",
+      "slug": "phones",
       "name": "Phones",
       "parent": "427bc808-6894-4b02-81b4-0b5d2618087d",
       "image": null,
       "lft": 2,
       "rght": 3,
-      "tree_id": 2,
+      "tree_id": 4,
       "level": 1
     }
   },
   {
-    "model": "products.catalog",
+    "model": "products.category",
     "pk": "f7c2963b-3127-4581-a5b9-5fa5e8b7437c",
     "fields": {
       "created_at": "2021-11-22T12:12:45.521Z",
-      "updated_at": "2021-11-22T12:12:45.521Z",
+      "updated_at": "2021-12-12T16:15:48.218Z",
+      "slug": "computers",
       "name": "Computers",
       "parent": "367a2f33-17f5-479b-86b1-d85a71217ca6",
       "image": null,
       "lft": 2,
       "rght": 3,
-      "tree_id": 1,
+      "tree_id": 3,
       "level": 1
     }
   },
@@ -354,7 +396,8 @@
     "pk": "11cc1515-5c07-490d-bea2-e59545466ffc",
     "fields": {
       "created_at": "2021-11-22T15:14:08.029Z",
-      "updated_at": "2021-11-22T15:14:08.029Z",
+      "updated_at": "2021-12-12T16:12:28.315Z",
+      "slug": "samsung-galaxy-s21",
       "name": "Samsung Galaxy S21",
       "code": "272627166",
       "description": "You will never miss the perfect moment for a photo again. Meet the Galaxy S21. Created to revolutionize the world of video and photography. With a cinematic resolution of 8K, you can create incredible photos right from the video. Galaxy S21 is a 64 MP camera, the fastest processor in the Galaxy and a powerful battery for the whole day. Everything for a new level of experience.",
@@ -369,7 +412,8 @@
     "pk": "2f0dbed6-f85c-4753-bdef-55647d157362",
     "fields": {
       "created_at": "2021-11-22T15:19:09.865Z",
-      "updated_at": "2021-11-22T15:19:09.865Z",
+      "updated_at": "2021-12-12T16:12:28.318Z",
+      "slug": "canon-eos-800d-18-55mm-is-stm-black",
       "name": "Canon EOS 800D 18-55mm IS STM Black",
       "code": "16855730",
       "description": "The EOS 800D simplifies the process of creating high-quality photos, allowing you to take amazing photos and videos at important moments in your life. You will enjoy the bright optical viewfinder of this SLR camera, in which the world looks as it is.",
@@ -384,7 +428,8 @@
     "pk": "5c61ef8a-0565-4f42-aa21-b4f480372a06",
     "fields": {
       "created_at": "2021-11-22T15:17:15.733Z",
-      "updated_at": "2021-11-22T15:17:15.733Z",
+      "updated_at": "2021-12-12T16:12:28.320Z",
+      "slug": "everest-home-4070",
       "name": "Everest Home 4070",
       "code": "37242776",
       "description": "To buy the Everest Home 4070 computer - means to get inexpensive, and at the same time the reliable decision for the most various daily tasks. The computer of this series will help to master skills of work with computer equipment, various office and multimedia applications, to enjoy modern dynamic games with a high level of detail of graphics.",
@@ -399,7 +444,8 @@
     "pk": "7b58c8c5-a1bf-46bb-96bb-1d2691cb1bff",
     "fields": {
       "created_at": "2021-11-22T15:10:16.020Z",
-      "updated_at": "2021-11-22T15:10:16.020Z",
+      "updated_at": "2021-12-12T16:12:28.322Z",
+      "slug": "asus-laptop-14-x409fa-bv593",
       "name": "Asus Laptop 14 X409FA-BV593",
       "code": "310972393",
       "description": "ASUS Laptop 14 X409 combines the advantages of different types of drives: high capacity and increased data transfer speed. It is recommended that you install the operating system and applications on a fast solid state drive, and use the hard disk to store large amounts of data, such as movie and music collections, and photo albums. In addition, the laptop supports Intel Optane memory, which can be used as a cache buffer to speed up communication with the hard drive.",
@@ -414,7 +460,8 @@
     "pk": "90174df8-eea2-494e-9ce9-399e4931f7d7",
     "fields": {
       "created_at": "2021-11-22T15:22:28.579Z",
-      "updated_at": "2021-11-22T15:22:28.579Z",
+      "updated_at": "2021-12-12T16:12:28.325Z",
+      "slug": "gopro-hero-10-black",
       "name": "GoPro HERO 10 Black",
       "code": "318002050",
       "description": "Matrix (light-sensitive element) 23.6 MP matrix with exceptional features: realistic image clarity, smooth motion transmission and impressive alignment of the horizon in the camera Media type Flash memory Zoom Touch zoom on the rear touch screen",
@@ -429,7 +476,8 @@
     "pk": "ebb49688-cea4-40db-80d0-b97100f40e4f",
     "fields": {
       "created_at": "2021-11-22T15:07:52.539Z",
-      "updated_at": "2021-11-22T15:07:52.539Z",
+      "updated_at": "2021-12-12T16:12:28.327Z",
+      "slug": "apple-macbook-air-13",
       "name": "Apple MacBook Air 13",
       "code": "245161909",
       "description": "Attention! All laptops have Cyrillic letters on the keyboard and are accompanied by an official warranty from the manufacturer! Before installing the software, please check the compatibility with the device indicated on the package, documentation or on the web",
@@ -444,7 +492,8 @@
     "pk": "eef85801-e523-44bb-aa7c-d964c63623b4",
     "fields": {
       "created_at": "2021-11-22T15:05:17.898Z",
-      "updated_at": "2021-11-22T15:05:17.898Z",
+      "updated_at": "2021-12-12T16:12:28.329Z",
+      "slug": "acer-nitro-5-an515-57-54k7",
       "name": "Acer Nitro 5 AN515-57-54K7",
       "code": "322576183",
       "description": "Attention! All laptops have Cyrillic letters on the keyboard and are accompanied by an official warranty from the manufacturer! Before installing the software, please check the compatibility with the device indicated on the package, documentation or on the web",
@@ -459,7 +508,8 @@
     "pk": "f17f80f4-da17-415d-815b-eabab82b5f4d",
     "fields": {
       "created_at": "2021-11-22T14:54:21.024Z",
-      "updated_at": "2021-11-22T14:54:21.024Z",
+      "updated_at": "2021-12-12T16:12:28.331Z",
+      "slug": "samsung-galaxy-m52",
       "name": "Samsung Galaxy M52",
       "code": "320841586",
       "description": "Borderless screen for maximum immersion The boundless 6.7-inch sAMOLED Plus screen of the Galaxy M52 provides natural color reproduction of the image at any time: during games, while watching movies and surfing the Internet. Enjoy the effect of maximum immersion during all your favorite activities.",
