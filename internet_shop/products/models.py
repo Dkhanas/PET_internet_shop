@@ -7,7 +7,7 @@ from utils.constants import (
     PRICE_DECIMALFIELD_DECIMAL_LENGTH,
 )
 from mptt.models import MPTTModel, TreeForeignKey
-
+from services.amazon_connections import s3_connection
 from utils.base_models import BaseModel, SlugModel
 
 
@@ -32,6 +32,7 @@ class Image(BaseModel):
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
         # TODO: add s3 bucket support
+        s3_connection.post_object_from_url(self.image_url)
         super().save(force_insert, force_update, using, update_fields)
 
     def __str__(self):
